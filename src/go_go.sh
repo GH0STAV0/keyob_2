@@ -10,13 +10,14 @@ cd /root/SDA_ALL/
 rm -rf site_5
 git reset --hard
 git pull
-cd /root/SDA_ALL/arm/
+cd /root/SDA_ALL/main_oct0pus/
 chmod +x *
 pwd
 while true
 do
 	echo "NEW ..............."
-	cd /root/SDA_ALL/arm/
+	dbus-uuidgen > /var/lib/dbus/machine-id
+	cd /root/SDA_ALL/main_oct0pus/
 	# timeout 5m python3 48_ads.py
 	python3 google_let.py
 done
