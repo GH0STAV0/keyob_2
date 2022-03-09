@@ -35,6 +35,7 @@ COPY ./addon/self.pem /etc/ssl/
 ################################## ADD FILES ##################################
 ADD ./bidoon/ $ADD_SCRIPTS/
 ADD ./src/ $INST_SCRIPTS/
+COPY ./src/go_go.sh "${STARTUPDIR}"/
 ADD ./addon/ $INST_SCRIPTS/
 RUN find $INST_SCRIPTS -name '*.sh' -exec chmod a+x {} +
 ################## Envrionment config ##########################################
