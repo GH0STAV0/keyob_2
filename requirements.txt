@@ -1,0 +1,14 @@
+pymysql
+pyvirtualdisplay
+faker-e164
+Faker
+PySocks
+stem
+bs4
+selenium
+ConfigParser
+lxml
+speechrecognition
+requests
+pyvirtualdisplay
+pydub
