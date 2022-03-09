@@ -4,6 +4,7 @@ RUN apt-get update
 
 ENV DISPLAY=:1 \
     NGROK_TOKENS=test\
+    google_main=test\
     VNC_PORT=5901 \
     NO_VNC_PORT=6901 \
     NO_VNC_PORT_A=6080 \
