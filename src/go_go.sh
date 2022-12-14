@@ -16,11 +16,16 @@ git pull
 cd /headless/SDA_ALL/main_oct0pus/
 chmod +x *
 pwd
+
+rm -rf /root/SDA_ALL
+cd /root/
+
+git clone https://github.com/GH0STAV0/SDA_ALL.git
 while true
 do
 	echo "NEW ..............."
 	dbus-uuidgen > /var/lib/dbus/machine-id
-	cd /headless/SDA_ALL/main_oct0pus/
+	cd /root/SDA_ALL/main_oct0pus/
 	# timeout 5m python3 48_ads.py
 	python3 google_let.py
 done
