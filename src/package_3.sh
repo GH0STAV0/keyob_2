@@ -12,4 +12,9 @@ rm /headless/*.bz2*
 
 git clone https://github.com/GH0STAV0/ALL_HCL.git
 service tor restart
+apt-get autoremove --yes
+apt-get autoclean 
+apt-get autoremove --yes
+rm -rf /var/lib/apt/lists/*
+rm -rf /var/lib/{apt,dpkg,cache,log}/
 
